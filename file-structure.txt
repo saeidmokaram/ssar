@@ -1,0 +1,42 @@
+ssar
+ |——map1
+ |   |——start-room1
+ |        |——s001-s002
+ |             |——16kHz_16bit
+ |             |    |——m-ch.wav
+ |             |    |——noise.wav
+ |             |    |——s-ch.wav
+ |             |
+ |             |——48kHz_16bit
+ |             |    |——4ch.wav
+ |             |
+ |             |——auto-transcript
+ |             |    |——m-ch.trs
+ |             |    |——s-ch.trs
+ |             |
+ |             |——transcript
+ |             |    |——m-ch.trs
+ |             |    |——s-ch.trs
+ |             |
+ |             |——pos.txt
+ |             |——TASK-INFO
+ |             |——handplot.png
+ |
+ |——Phonetic_Spellings.txt
+ |——speakers-info.txt
+ |——spk2gender.txt
+ |——scripts
+      |——lib.py
+      |——map1.png
+      |——map2.png
+      |——map3.png
+      |——map4.png
+ |——documents
+      |——TranscriptionsGuidelines.pdf
+      |——InformationSheet.pdf
+      |——PersonalInformation.pdf
+      |——ConsentForm.pdf
+      |——map1.png
+      |——map2.png
+      |——map3.png
+      |——map4.png

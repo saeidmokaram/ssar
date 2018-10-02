@@ -1,0 +1,33 @@
+main-speaker:
+speaker-id: s023
+gender: male
+age: 24
+language: EN
+pronunciation-dialect: british english
+from: matlock
+
+second-speaker:
+speaker-id: s024
+gender: male
+age: 19
+language: EN
+pronunciation-dialect: british english
+from: derbyshire
+
+task-info:
+map: 2
+starting-room: 7
+duration: 7
+
+recording-information:
+microphone-make: panasonic-ramsa_wm-s10_condenser
+microphone-type: headset-mic
+audio-card-make: MOTU
+audio-card-type: MOTU-896-Mk3
+audio-recording-software: audacity
+
+file-info:
+file-type: wav
+original-sample-rate: 48000
+original-sample-format: 16
+number-of-channels: 4

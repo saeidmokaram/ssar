@@ -1,0 +1,33 @@
+main-speaker:
+speaker-id: s014
+gender: female
+age: 23
+language: EN
+pronunciation-dialect: british english
+from: solihull
+
+second-speaker:
+speaker-id: s013
+gender: male
+age: 40
+language: EN
+pronunciation-dialect: british english
+from: portsmouth
+
+task-info:
+map: 1
+starting-room: 6
+duration: 6
+
+recording-information:
+microphone-make: panasonic-ramsa_wm-s10_condenser
+microphone-type: headset-mic
+audio-card-make: MOTU
+audio-card-type: MOTU-896-Mk3
+audio-recording-software: audacity
+
+file-info:
+file-type: wav
+original-sample-rate: 48000
+original-sample-format: 16
+number-of-channels: 4

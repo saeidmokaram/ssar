@@ -1,0 +1,33 @@
+main-speaker:
+speaker-id: s004
+gender: female
+age: 25
+language: EN
+pronunciation-dialect: british english
+from: falmouth, cornwall
+
+second-speaker:
+speaker-id: s003
+gender: female
+age: 19
+language: EN
+pronunciation-dialect: british english
+from: Hillingdon, Greater London
+
+task-info:
+map: 2
+starting-room: 4
+duration: 7
+
+recording-information:
+microphone-make: panasonic-ramsa_wm-s10_condenser
+microphone-type: headset-mic
+audio-card-make: MOTU
+audio-card-type: MOTU-896-Mk3
+audio-recording-software: audacity
+
+file-info:
+file-type: wav
+original-sample-rate: 48000
+original-sample-format: 16
+number-of-channels: 4

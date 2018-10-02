@@ -1,0 +1,25 @@
+id	recording date	Start room	age	sex	accent			hometown
+s001	12-10-2014	1		20	female	native-uk-southern	na
+s002	12-10-2014	2		20	female	native-uk-southern	doncaster
+s003	12-12-2014	3		19	female	native-uk-southern	london
+s004	12-12-2014	4		25	female	native-uk-southern	cornwall
+s005	16-12-2014	5		20	female	native-uk-southern	london
+s006	16-12-2014	6		22	female	native-uk-southern	hartlepool
+s007	19-12-2014	7		24	male	native-uk-southern	brighton
+s008	19-12-2014	8		21	male	native-uk-southern	woking
+s009	26-01-2015	1		20	female	native-uk-southern	devon
+s010	26-01-2015	2		20	male	native-uk-southern	west-midlands
+s011	26-01-2015	3		19	male	native-uk-southern	nottingham
+s012	26-01-2015	4		18	male	native-uk-southern	london
+s013	27-01-2015	5		40	male	native-uk-southern	portsmouth
+s014	27-01-2015	6		23	female	native-uk-southern	solihull
+s015	27-01-2015	8		19	male	native-uk-southern	derby
+s016	27-01-2015	7		21	male	native-uk-southern	warwickshire
+s017	29-01-2015	1		20	male	native-uk-southern	southampton
+s018	29-01-2015	2		22	male	native-uk-southern	nottingham 
+s019	03-02-2015	3		20	male	native-uk-southern	bristol
+s020	03-02-2015	4		22	male	native-uk-southern	brighton
+s021	04-02-2015	5		21	male	native-uk-southern	na
+s022	04-02-2015	6		20	male	native-uk-southern	cheshire
+s023	04-02-2015	7		24	male	native-uk-southern	matlock
+s024	04-02-2015	8		19	male	native-uk-southern	derbyshire

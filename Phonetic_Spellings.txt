@@ -1,0 +1,17 @@
+Phonetic Spellings used:
+
+Er	E'ER	ea r
+Erm	ERM	er m
+Oh	OH	ow
+Um	'EM	ax m
+Uhmm	H'M	hh ax m
+Uh	UH	ah	or	uh
+Ah	AH	aa
+um hum	'EM	HUM
+ye	YE	y iy
+ohh	UH	ah	or	uh
+ow	OH	ow
+
+All right = alright
+p_c_s = p_c_’s
+

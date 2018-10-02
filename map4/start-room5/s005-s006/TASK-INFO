@@ -1,0 +1,42 @@
+main-speaker:
+
+name: Natasha Chilman
+speaker-id: s005
+gender: female
+age: 20
+language: EN
+pronunciation-dialect: british english
+from: London
+email: nchilman1@sheffield.ac.uk
+
+second-speaker:
+
+name: Jennifer Matthews
+speaker-id: s006
+gender: female
+age: 22
+language: EN
+pronunciation-dialect: british english
+from: Hartlepool
+email: mdb10jm@sheffield.ac.uk
+
+task-info:
+
+map: 1
+starting-room: 5
+duration: 6
+
+recording-information:
+
+microphone-make: panasonic-ramsa_wm-s10_condenser
+microphone-type: headset-mic
+audio-card-make: MOTU
+audio-card-type: MOTU-896-Mk3
+audio-recording-software: audacity
+
+file-info:
+
+file-type: wav
+original-sample-rate: 48000
+original-sample-format: 16
+number-of-channels: 4

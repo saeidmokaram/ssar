@@ -1,0 +1,33 @@
+main-speaker:
+speaker-id: s002
+gender: female
+age: 20
+language: EN
+pronunciation-dialect: british english
+from: doncaster
+
+second-speaker:
+speaker-id: s001
+gender: female
+age: 20
+language: EN
+pronunciation-dialect: british english
+from: na
+
+task-info:
+map: 1
+starting-room: 2
+duration: 5
+
+recording-information:
+microphone-make: panasonic-ramsa_wm-s10_condenser
+microphone-type: headset-mic
+audio-card-make: MOTU
+audio-card-type: MOTU-896-Mk3
+audio-recording-software: audacity
+
+file-info:
+file-type: wav
+original-sample-rate: 48000
+original-sample-format: 16
+number-of-channels: 4

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-13.dtd">
+<Trans scribe="saeid-mokaram" audio_filename="s-ch" version="3" version_date="150424">
+<Speakers>
+<Speaker id="spk1" name="s008" check="yes" type="male" dialect="native" accent="british" scope=""/>
+</Speakers>
+<Episode>
+<Section type="report" startTime="0" endTime="480.0003125">
+<Turn startTime="0" endTime="480.0003125" speaker="spk1" mode="spontaneous" fidelity="high"
+channel="studio">
+<Sync time="0"/>
+
+<Sync time="321.65"/>
+at
+<Sync time="322.79"/>
+
+</Turn>
+</Section>
+</Episode>
+</Trans>

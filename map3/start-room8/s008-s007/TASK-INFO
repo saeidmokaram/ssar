@@ -1,0 +1,42 @@
+main-speaker:
+
+name: Michael Charters
+speaker-id: s008
+gender: male
+age: 21
+language: EN
+pronunciation-dialect: british english
+from: Woking
+email: mdcharters1@sheffield.ac.uk
+
+second-speaker:
+
+name: Andrew Ferris
+speaker-id: s007
+gender: male
+age: 24
+language: EN
+pronunciation-dialect: british english
+from: Brighton
+email: aca09ajf@sheffield.ac.uk
+
+task-info:
+
+map: 3
+starting-room: 8
+duration: 8
+
+recording-information:
+
+microphone-make: panasonic-ramsa_wm-s10_condenser
+microphone-type: headset-mic
+audio-card-make: MOTU
+audio-card-type: MOTU-896-Mk3
+audio-recording-software: audacity
+
+file-info:
+
+file-type: wav
+original-sample-rate: 48000
+original-sample-format: 16
+number-of-channels: 4

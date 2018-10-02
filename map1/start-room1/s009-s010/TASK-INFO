@@ -1,0 +1,33 @@
+main-speaker:
+speaker-id: s009
+gender: female
+age: 20
+language: EN
+pronunciation-dialect: british english
+from: devon
+
+second-speaker:
+speaker-id: s010
+gender: male
+age: 20
+language: EN
+pronunciation-dialect: british english
+from: west-midlands
+
+task-info:
+map: 1
+starting-room: 1
+duration: 6
+
+recording-information:
+microphone-make: panasonic-ramsa_wm-s10_condenser
+microphone-type: headset-mic
+audio-card-make: MOTU
+audio-card-type: MOTU-896-Mk3
+audio-recording-software: audacity
+
+file-info:
+file-type: wav
+original-sample-rate: 48000
+original-sample-format: 16
+number-of-channels: 4

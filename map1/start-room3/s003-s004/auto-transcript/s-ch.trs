@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-13.dtd">
+<Trans scribe="saeid-mokaram" audio_filename="s-ch" version="3" version_date="150424">
+<Speakers>
+<Speaker id="spk1" name="s003" check="yes" type="female" dialect="native" accent="british" scope=""/>
+</Speakers>
+<Episode>
+<Section type="report" startTime="0" endTime="360.0">
+<Turn startTime="0" endTime="360.0" speaker="spk1" mode="spontaneous" fidelity="high"
+channel="studio">
+<Sync time="0"/>
+
+<Sync time="30.43"/>
+he does
+<Sync time="31.53"/>
+
+<Sync time="100.08"/>
+two doors
+<Sync time="101.32"/>
+
+</Turn>
+</Section>
+</Episode>
+</Trans>
