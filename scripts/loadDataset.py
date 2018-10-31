@@ -10,25 +10,6 @@ __email__ = "saeid.mokaram@gmail.com"
 __status__ = "Release"
 # ==============================================
 
-from ssarLib import Recording
-import os
+from ssarLib import makeKaldiFormat
 
-# ==============================================
-
-def loadSSAR(ssarPath):
-    dataset = []
-    for map in ["map1", "map2", "map3", "map4"]:
-        for startRoom in os.listdir(ssarPath + "/" + map):
-            for recording in os.listdir(ssarPath + "/" + map + "/" + startRoom):
-                dataFolderPath = ssarPath + "/" + map + "/" + startRoom + "/" + recording
-                print(dataFolderPath)
-
-                dataset.append(Recording(dataFolderPath))
-    return dataset
-
-# ==============================================
-
-dataset = loadSSAR("..")
-
-print(" ".join( [utt["text"] for utt in dataset[0].utterances_mainSpeaker] ))
-dataset[0].plot(True)
+makeKaldiFormat("../../ssar", "kaldiData")
