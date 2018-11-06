@@ -10,6 +10,6 @@ __email__ = "saeid.mokaram@gmail.com"
 __status__ = "Release"
 # ==============================================
 
-from ssarLib import makeKaldiFormat
+from ssarLib import makeKaldiFormat, makeKaldiFormatAugmented
 
-makeKaldiFormat("../../ssar", "kaldiData")
+makeKaldiFormatAugmented("/home/saeid/asr/datasets/ssar", "/home/saeid/asr/datasets/ssar/kaldiData", "/home/saeid/asr/datasets/ssar/noise.wav", [0.0, 0.1, 0.2, 0.3, 0.4, 0.5])

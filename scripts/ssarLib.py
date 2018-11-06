@@ -15,7 +15,7 @@ __status__ = "Release"
 # data.plot(True)
 # ==============================================
 
-import os, json, math
+import os, json, math, random
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 
@@ -311,6 +311,87 @@ def makeKaldiFormat(datasetPath, outFolderPath):
 
             segDict[uttID] = uttID + " " + wavID + " " + str(utt["start_time"]) + " " + str(utt["end_time"]) + "\n"
 
+    #----------------------------------------------------------------
+    if not os.path.exists(outFolderPath):
+        os.mkdir(outFolderPath)
+
+    with open(outFolderPath + '/spk2gender', 'w') as spk2genderFile:
+        for spk in sorted(spk2genderDict.keys()):
+            spk2genderFile.write(spk2genderDict[spk])
+
+    with open(outFolderPath + '/wav.scp', 'w') as wavFile:
+        for wav in sorted(wavScpDict.keys()):
+            wavFile.write(wavScpDict[wav])
+
+    with open(outFolderPath + '/segments', 'w') as segFile:
+        for seg in sorted(segDict.keys()):
+            segFile.write(segDict[seg])
+
+    with open(outFolderPath + '/utt2spk', 'w') as utt2spkFile:
+        for utt in sorted(utt2spkDict.keys()):
+            utt2spkFile.write(utt2spkDict[utt])
+
+    with open(outFolderPath + '/spk2utt', 'w') as spk2uttFile:
+        for spk in sorted(spk2uttDict.keys()):
+            spk2uttFile.write(spk + " " + " ".join(spk2uttDict[spk]) + "\n")
+
+    with open(outFolderPath + '/text', 'w') as textFile:
+        for utt in sorted(textDict.keys()):
+            textFile.write(textDict[utt])
+
+    with open(outFolderPath + '/vocabs', 'w') as vocabsFile:
+        for word in sorted(set(allWords)):
+            vocabsFile.write(word + "\n")
+# ==============================================
+
+# ==============================================
+def makeKaldiFormatAugmented(datasetPath, outFolderPath, noiseAudioPath, noiseLevels):
+    dataset = loadSSAR(datasetPath)
+    allWords = []
+    spk2genderDict = {}
+    wavScpDict = {}
+    textDict = {}
+    spk2uttDict = {}
+    utt2spkDict = {}
+    segDict = {}
+
+    for nl, noiseLevel in enumerate(noiseLevels):
+        for r, rec in enumerate(dataset):
+            wavID = "r" + "{0:02}".format(nl) + "{0:06}".format(r)
+            spk2genderDict[rec.mainSpeakerID] = rec.mainSpeakerID + " " + rec.mainSpeakerGender[0] + "\n"
+
+            # if noiseLevel == 0.0:
+            #     wavScpDict[wavID] = wavID + " " + rec.audioPath_mainSpeaker + "\n"
+            # else:
+            #     noiseLen = 1860.0
+            #     start = str(float(random.randint(0, int(noiseLen - rec.audioLen))))
+            #
+            #     # wavScpDict[wavID] = wavID + " sox -m '|sox " + rec.audioPath_mainSpeaker + " -t wav - vol 2.0' '|sox " + noiseAudioPath + " -t wav - vol " + str(noiseLevel) + " trim " + start + " " + str(rec.audioLen) + "' -t wav - |\n"
+
+            for u, utt in enumerate(rec.utterances_mainSpeaker):
+                uttID = wavID + "u" + "{0:02}".format(nl) + "{0:06}".format(u)
+
+                trans = normalize_text(utt["text"])
+                allWords = allWords + trans.split()
+
+                if spk2uttDict.has_key(rec.mainSpeakerID):
+                    spk2uttDict[rec.mainSpeakerID].append(uttID)
+                else:
+                    spk2uttDict[rec.mainSpeakerID] = [uttID]
+
+                utt2spkDict[uttID] = uttID + " " + rec.mainSpeakerID + "\n"
+
+                textDict[uttID] = uttID + " " + trans + "\n"
+
+
+                noiseLen = 1860.0
+                start = str(float(random.randint(0, int(noiseLen - utt["duration"]))))
+                wavScpDict[uttID] = uttID + " sox -m '|sox " + rec.audioPath_mainSpeaker + " -t wav - vol 2.0 trim " + str(utt["start_time"]) + " " + str(utt["duration"]) + "' '|sox " + noiseAudioPath + " -t wav - vol " + str(noiseLevel) + " trim " + start + " " + str(rec.audioLen) + "' -t wav - |\n"
+
+
+                segDict[uttID] = uttID + " " + wavID + " " + str(utt["start_time"]) + " " + str(utt["end_time"]) + "\n"
+
+    # ----------------------------------------------------------------
     if not os.path.exists(outFolderPath):
         os.mkdir(outFolderPath)
 
